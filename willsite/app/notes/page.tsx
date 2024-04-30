@@ -28,7 +28,7 @@ export default async function NotesPage() {
             </div>
             <CreateNote />
         </div>
-   ); 
+    ); 
 }
 
 function Note({note}:any) {

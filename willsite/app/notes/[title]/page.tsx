@@ -14,11 +14,11 @@ async function getNote(noteId: string) {
 }
 
 export default async function NotePage({params}:any) {
-    const note = await getNote(params.id);
+    const note = await getNote(params.title);
 
     return (
         <div>
-            <h1>note/{note.id}</h1>
+            <h1>Notes/{note.title}</h1>
             <div className={styles.note}>
                 <h3>{note.title}</h3>
                 <h5>{note.content}</h5>
